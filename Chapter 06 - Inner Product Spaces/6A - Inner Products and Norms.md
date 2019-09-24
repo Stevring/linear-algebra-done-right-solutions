@@ -1,49 +1,18 @@
-Chapter 6: **Inner Product Spaces**
+[TOC]
 
+# Chapter 6: **Inner Product Spaces**
 
 **6.A**
 
-- [x] Exercise 1
-- [x] Exercise 2
-- [ ] Exercise 3
-- [x] Exercise 4
-- [x] Exercise 5
-- [x] Exercise 6
-- [x] Exercise 7
-- [x] Exercise 8
-- [ ] Exercise 9
-- [ ] Exercise 10
-- [x] Exercise 11
-- [x] Exercise 12
-- [x] Exercise 13
-- [x] Exercise 14
-- [x] Exercise 15
-- [ ] Exercise 16
-- [ ] Exercise 17
-- [ ] Exercise 18
-- [x] Exercise 19
-- [x] Exercise 20
-- [ ] Exercise 21
-- [x] Exercise 22
-- [x] Exercise 23
-- [x] Exercise 24
-- [x] Exercise 25
-- [x] Exercise 26
-- [ ] Exercise 27
-- [ ] Exercise 28
-- [ ] Exercise 29
-- [ ] Exercise 30
-- [ ] Exercise 31
-
-_Exercise 1_
+## _Exercise 1_
 
 It does not satisfy homogeneity on the first slot when $\lambda$ is negative.
 
-_Exercise 2_
+## _Exercise 2_
 
 It does not satisfy the definiteness property if we let the first and third slots equal zero but the second non-zero.
 
-_Exercise 4_
+## _Exercise 4_
 
 _(a)_
 We have
@@ -62,7 +31,7 @@ This follows directly from the above.
 _(c)_
 Just look at the picture before 6.22.
 
-_Exercise 5_
+## _Exercise 5_
 
 Suppose $v \in V$ such that $(T - \sqrt{2}I)v = 0$.
 Then $Tv = \sqrt{2}v$.
@@ -70,7 +39,7 @@ This implies that $||v|| \ge ||Tv|| = ||\sqrt{2}v|| = \sqrt{2}||v||$.
 Since $||v||$ cannot be negative, it follows that $||v|| = 0$.
 Hence $v = 0$, showing that $T - \sqrt{2}I$ is injective and, therefore, invertible.
 
-_Exercise 6_
+## _Exercise 6_
 
 Suppose $\langle u, v \rangle = 0$.
 Note that $u$ is orthogonal to any multiple of $v$.
@@ -119,7 +88,7 @@ $$
 \end{aligned}
 $$
 
-_Exercise 7_
+## _Exercise 7_
 
 The forward direction is obvious, just choose $a = 1$ and $b = 0$ to get the desired result.
 
@@ -138,7 +107,7 @@ $$
 \end{aligned}
 $$
 
-_Exercise 8_
+## _Exercise 8_
 
 We have
 
@@ -148,7 +117,7 @@ $$
 
 Thus $u - v = 0$, which implies that $u = v$.
 
-_Exercise 11_
+## _Exercise 11_
 
 Let $u = \left(\sqrt{a}, \sqrt{b}, \sqrt{c}, \sqrt{d}\right)$ and $v = \left(\frac{1}{\sqrt{a}}, \frac{1}{\sqrt{b}}, \frac{1}{\sqrt{c}}, \frac{1}{\sqrt{d}}\right)$.
 Then, by 6.15, we have
@@ -159,7 +128,7 @@ $$
 
 Taking the square of each side now gives the desired result.
 
-_Exercise 12_
+## _Exercise 12_
 
 Take $x = (x_1, \dots, x_n)$ and $y = (1, \dots, 1)$ ($n$ ones).
 By 6.15, we have
@@ -170,7 +139,7 @@ $$
 
 Squaring each side now gives the desired result.
 
-_Exercise 13_
+## _Exercise 13_
 
 From the Law of Cosines, we have
 
@@ -183,12 +152,12 @@ $$
 \end{aligned}
 $$
 
-_Exercise 14_
+## _Exercise 14_
 
 The Cauchy-Schwarz Inequality ensures $\frac{\langle x, y \rangle}{||x||\\:||y||}$ is always a number between $-1$ and $1$.
 Moreover it only equals $1$ or $-1$ if one of $x, y$ is a scalar multiple of the other, that is, when the angle is $0$ or $\pi$.
 
-_Exercise 15_
+## _Exercise 15_
 
 Let $a = (\sqrt{1} a_1, \dots, \sqrt{n} a_n)$ and $b = \left(\frac{b_1}{\sqrt{1}}, \dots, \frac{b_n}{\sqrt{n}}\right)$.
 Then
@@ -204,7 +173,38 @@ $$
 
 where the second line follows from the Cauchy-Schwarz Inequality.
 
-_Exercise 19_
+## *Exercise 18*
+
+$$
+\begin{aligned}
+<v,v> &= <(x,y), (x,y)>  \\
+&= \parallel(x,y)\parallel^2 \\
+&=(|x|^p+|y|^p)^{\frac{2}{p}} \\
+\end{aligned}
+$$
+
+设第一个元素的x,y分别贡献的幂为s和u, 则第二个元素贡献的幂分别为p-s, p-u:$(|x|^s|x|^{p-s}+|y|^u|y|^{p-u})^{\frac{2}{p}}$
+
+列等式1：
+$$
+\begin{aligned}
+<v,2v>=(2^{p-s}|x|^s|x|^{p-s}+2^{p-u}|y|^u|y|^{p-u})^{\frac{2}{p}} \\
+<v,2v>=2<v,v>=(2^{\frac{2}{p}}|x|^p+2^{\frac{2}{p}}|y|^p)^{\frac{2}{p}}
+\end{aligned}
+$$
+得a. $p-s=\frac{s}{p}$, b. $s=u$
+
+列等式2：
+$$
+\begin{aligned}<2v,v>=(2^{s}|x|^s|x|^{p-s}+2^{u}|y|^u|y|^{p-u})^{\frac{2}{p}} \\
+<2v,v>=2<v,v>=(2^{\frac{2}{p}}|x|^p+2^{\frac{2}{p}}|y|^p)^{\frac{2}{p}}
+\end{aligned}
+$$
+得c.  $s=\frac{2}{p}$
+
+由a.b.c联立解得p=2
+
+## _Exercise 19_
 
 We have
 
@@ -218,7 +218,7 @@ $$
 
 Dividing by $4$ yields the desired result.
 
-_Exercise 20_
+## _Exercise 20_
 
 We have
 
@@ -233,7 +233,7 @@ $$
 
 Dividing by $4$ yields the desired result.
 
-_Exercise 22_
+## _Exercise 22_
 
 Let $x = (1, \dots, 1)$ ($n$ ones) and $a = (a_1, \dots, a_n)$.
 Then
@@ -249,13 +249,13 @@ $$
 
 where the second line follows from the Cauchy-Schwarz Inequality.
 
-_Exercise 23_
+## _Exercise 23_
 
 We have $\langle (v_1, \dots, v_m), (v_1, \dots, v_m) \rangle = \langle v_1, v_1 \rangle + \dots + \langle v_m, v_m \rangle$.
 Positivity and definiteness follow directly from the fact that $\langle v_j, v_j \rangle \ge 0$ for each $j$.
 The remaining properties follow easily from the definitions.
 
-_Exercise 24_
+## _Exercise 24_
 
 For positivity, we have $\langle v, v \rangle_1 = \langle Sv, Sv \rangle \ge 0$.
 
@@ -270,12 +270,12 @@ For homogeneity, $\langle \lambda u, v \rangle_1 = \langle \lambda Su, Sv \rangl
 
 For conjugate symmetry, we have $\langle u, v \rangle_1 = \langle Su, Sv \rangle = \overline{\langle Sv, Su \rangle} = \overline{\langle v, u \rangle_1}$.
 
-_Exercise 25_
+## _Exercise 25_
 
 If $S$ is not injective, then there exists a non-zero $v \in V$, such that $Sv = 0$.
 But $\langle v, v \rangle_1 = \langle Sv, Sv \rangle = \langle 0, 0 \rangle = 0$, therefore $\langle \cdot, \cdot \rangle_1$ cannot satisfy the definiteness property of inner products.
 
-_Exercise 26_
+## _Exercise 26_
 
 _(a)_
 

@@ -23,7 +23,7 @@ Chapter 3: **Linear Maps**
 - [x] Exercise 19
 - [x] Exercise 20
 
-_Exercise 1_
+***Exercise 1***
 
 We have that
 
@@ -39,11 +39,10 @@ $$
 
 Hence $ST$ is invertible and $(ST)^{-1} = T^{-1}S^{-1}$.
 
-_Exercise 2_
+_**Exercise 2**_
 
 Let $N$ be the set of noninvertible operators on $V$.
 Let $v_1, \dots, v_n$ be a basis of $V$. Define $S,T \in \mathcal{L}(V)$ such that
-
 $$
 \begin{aligned}
 S(a_1 v_1 + \dots + a_n v_n) &= a_1 v_1\\\\
@@ -55,7 +54,7 @@ Neither $S$ and $T$ are surjective, hence both are in $N$.
 But $S + T = I$ and $I$ is clearly invertible.
 Thus $S + T \notin N$ and $N$ is not closed under addition.
 
-_Exercise 3_
+_**Exercise 3**_
 
 Suppose $T \in \mathcal{L}(V)$ is an invertible operator such that $Tu = Su$ for every $u \in U$.
 Let $u_1, u_2 \in U$ such that $Su_1 = Su_2$.
@@ -83,7 +82,7 @@ $$
 Because $Su_1, \dots, Su_n, \nu_1, \dots, \nu_m$ is linearly independent, it follows that $\operatorname{null} T = \\{0\\}$.
 Hence $T$ is injective and, therefore, invertible.
 
-_Exercise 4_
+_**Exercise 4**_
 
 For the implication in the forward direction, by _Exercise 3_ we only need to prove the existence of an injective linear map $S \in \mathcal{L}(\operatorname{range} T_2, W)$ such that $T_1 = ST_2$.
 
@@ -164,7 +163,7 @@ $$
 
 Hence $v \in \operatorname{null} T_1$ and, therefore $\operatorname{null} T_1 = \operatorname{null} T_2$.
 
-_Exercise 5_
+_**Exercise 5**_
 
 Suppose $\operatorname{range} T_1 = \operatorname{range} T_2$.
 Let $u_1, \dots, u_n$ be a basis of $\operatorname{null} T_1$ and extend it to a basis $u_1, \dots, u_n, v_1, \dots, v_m$ of $V$.
@@ -284,7 +283,7 @@ $$
 It easy show that $T_1 = S T_2 R$ (it is almost the same as in the proof of _Exercise 4_ and _5_) and that $S$ injective.
 By _Exercise 3_, there is an invertible operator on $W$ that satisfies the same property as $S$, which completes the proof.
 
-_Exercise 7_
+_**Exercise 7**_
 
 _(a)_
 Let $S, T \in E$.
@@ -311,7 +310,6 @@ $$
 To prove $\Lambda$ is injective, let $S, T \in E$ such that $\Lambda(S) = \Lambda(T)$.
 Let $u \in V$.
 There are scalars $a_1, \dots, a_n, a \in \mathbb{F}$ such that
-
 $$
 u = a_1 u_1 + \dots + a_n u_n + a v
 $$
@@ -334,9 +332,8 @@ $$
 Hence $S = T$.
 Therefore $\Lambda$ is injective.
 
-To prove surjectivity, let $T \in L(U, W)$.
-Define $S \in L(V, W)$ by
-
+To prove surjectivity, let $T \in \mathcal{L}(U, W)$.
+Define $S \in \mathcal{L}(V, W)$ by
 $$
 \begin{aligned}
 Su_j &= Tu_j, \text{ for } j = 1, \dots, n\\\\

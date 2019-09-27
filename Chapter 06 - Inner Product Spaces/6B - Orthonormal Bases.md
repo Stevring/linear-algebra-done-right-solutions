@@ -1,26 +1,8 @@
-Chapter 6: **Inner Product Spaces**
+[TOC]
 
-**6.B**
+# Chapter 6: **Inner Product Spaces**
 
-- [x] Exercise 1
-- [x] Exercise 2
-- [x] Exercise 3
-- [ ] Exercise 4
-- [x] Exercise 5
-- [x] Exercise 6
-- [x] Exercise 7
-- [x] Exercise 8
-- [x] Exercise 9
-- [x] Exercise 10
-- [x] Exercise 11
-- [ ] Exercise 12
-- [ ] Exercise 13
-- [ ] Exercise 14
-- [ ] Exercise 15
-- [ ] Exercise 16
-- [x] Exercise 17
-
-_Exercise 1_
+## _Exercise 1_
 
 _(a)_
 One can easily check that each of the four vectors has norm $\sin^2 \theta + \cos^2 \theta$, which equals $1$.
@@ -56,7 +38,7 @@ $$
 
 Which shows that $v, u$ is of the first form given in part (a).
 
-_Exercise 2_
+## _Exercise 2_
 
 The backward direction follows directly from 6.30.
 
@@ -88,7 +70,7 @@ $$
 
 which shows that $v \in \operatorname{span}(e_1, \dots, e_m)$.
 
-_Exercise 3_
+## _Exercise 3_
 
 Applying the Gram-Schmidt Procedure to the given basis, we get the following basis
 
@@ -98,7 +80,7 @@ $$
 
 As in the proof of 6.37, we see that the matrix of $T$ with respect to this basis is upper triangular.
 
-_Exercise 5_
+## _Exercise 5_
 
 Applying the Gram-Schmidt Procedure, we get the following basis
 
@@ -106,13 +88,13 @@ $$
 1, \\: 2\sqrt{3}(x - \frac{1}{2}), \\: 6\sqrt{5}(x^2 - x + \frac{1}{6}).
 $$
 
-_Exercise 6_
+## _Exercise 6_
 
 Let $D$ denote the differential operator.
 Note that $D$ is already upper-triangular with respect to the standard basis of $\mathcal{P}_2{\mathbb{R}}$.
 Therefore, by the same reasoning used in the proof of 6.37, $\mathcal{M}(D)$ is upper-triangular with respect to the basis found in Exercise 5.
 
-_Exercise 7_
+## _Exercise 7_
 
 Defining $\varphi(p) = p(\frac{1}{2})$ and $\langle p, q \rangle = \int_{0}^{1} p(x)q(x)\ dx$ and using the formula from 6.43 together with the basis found in Exercise 5, we find that
 
@@ -120,11 +102,11 @@ $$
 q(x) = -15x^2 + 15x - \frac{3}{2}.
 $$
 
-_Exercise 8_
+## _Exercise 8_
 
 Using the orthonormal basis found in Exercise 5 and the formula in 6.43, we get $q(x) = \frac{-24}{\pi^2}\left(x - \frac{1}{2}\right)$.
 
-_Exercise 9_
+## _Exercise 9_
 
 Suppose $v_1, \dots, v_m$ is a lienarly dependent list in $V$.
 Let $k$ be the smallest integer such that $v_k \in \operatorname{span}(v_1, \dots, v_{k-1})$.
@@ -138,13 +120,13 @@ $$
 But the right hand side is exactly what we subtract from $v_k$ when calculating $e_k$, hence the Gram-Schmidt Procedure cannot continue because we can't divide by $0$.
 If, however, you discard $v_k$ (and every other vector to which happens the same thing), you end up producing an orthonormal basis whose span equals $\operatorname{span}(v_1, \dots, v_m)$.
 
-_Exercise 10_
+## _Exercise 10_
 
 Just apply the Gram-Schmidt Procedure once on $v_1, \dots, v_m$ to get the orthonormal an $e_1, \dots, e_m$.
 Note that, if we switch the order of this list without relabeling the vectors, we still have $\operatorname{span}(v_1, \dots, v_j) = \operatorname{span}(e_1, \dots, e_j)$ for all $j \in \\{1, \dots, m\\}$, because the vectors themselves remain the same.
 There $2^m$ such permutations.
 
-_Exercise 11_
+## _Exercise 11_
 
 Let $w \in V$.
 Define $\varphi(v) = \langle v, w \rangle_1$ and $\psi(v) = \langle v, w \rangle_2$.
@@ -186,7 +168,7 @@ Hence $c_1 = \bar{c_2}$.
 Because both are real, it follows that $c_1 = c_2$.
 Therefore, the constant is the same for all $v, w \in V$.
 
-_Exercise 17_
+## _Exercise 17_
 
 _(a)_
 For additivity, suppose $u_1, u_2 \in V$.

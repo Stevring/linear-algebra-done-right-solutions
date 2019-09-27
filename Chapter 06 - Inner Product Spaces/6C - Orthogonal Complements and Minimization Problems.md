@@ -1,23 +1,8 @@
-Chapter 6: **Inner Product Spaces**
+[TOC]
 
-**6.C**
+# Chapter 6: **Inner Product Spaces**
 
-- [x] Exercise 1
-- [x] Exercise 2
-- [x] Exercise 3
-- [ ] Exercise 4
-- [x] Exercise 5
-- [x] Exercise 6
-- [x] Exercise 7
-- [ ] Exercise 8
-- [x] Exercise 9
-- [x] Exercise 10
-- [x] Exercise 11
-- [x] Exercise 12
-- [x] Exercise 13
-- [ ] Exercise 14
-
-_Exercise 1_
+## _Exercise 1_
 
 Suppose $w \in \\{v_1, \dots, v_m\\}^\perp$.
 Let $v = \in \operatorname{span}(v_1, \dots, v_m)$.
@@ -40,7 +25,7 @@ Now suppose $w \in (\operatorname{span}(v_1, \dots, v_m))^\perp$.
 Since each $v_j$ is in $\operatorname{span}(v_1, \dots, v_m)$, it follows that $w$ is orthogonal to each $v_j$.
 Therefore $w \in \\{v_1, \dots, v_m\\}^\perp$ and thus $(\operatorname{span}(v_1, \dots, v_m))^\perp \subset \\{v_1, \dots, v_m\\}^\perp$.
 
-_Exercise 2_
+## _Exercise 2_
 
 Suppose $U^\perp = \\{0\\}$.
 Since $V = U \oplus U^\perp$ (by 6.47), it follows that $U = V$.
@@ -48,7 +33,7 @@ Since $V = U \oplus U^\perp$ (by 6.47), it follows that $U = V$.
 Conversely, suppose $U = V$.
 Then $U^\perp = V^\perp = \\{0\\}$.
 
-_Exercise 3_
+## _Exercise 3_
 
 By 6.31, we have $\operatorname{span}(u_1, \dots, u_m) = \operatorname{span}(e_1, \dots, e_m)$.
 Therefore $e_1, \dots, e_m$ is indeed an orthonormal basis of $U$.
@@ -61,7 +46,7 @@ $$
 
 Hence $f_1, \dots, f_n$ is linearly independent list of length $\operatorname{dim} U^\perp$, that is, a basis of $U^\perp$.
 
-_Exercise 5_
+## _Exercise 5_
 
 Suppose $v \in V$.
 By 6.47, we can write $v = u + w$, where $u \in U$ and $w \in U^\perp$.
@@ -75,7 +60,7 @@ $$
 
 Hence $P_{U^\perp} = I - P_U$.
 
-_Exercise 6_
+## _Exercise 6_
 
 Suppose $P_U P_W = 0$.
 Then $\operatorname{range} P_W \subset \operatorname{null} P_U$.
@@ -94,7 +79,7 @@ $$
 
 Where the last equality, follows from the fact that $W \subset U^\perp$.
 
-_Exercise 7_
+## _Exercise 7_
 
 Define $U = \operatorname{range} P$.
 Suppose $u \in U$.
@@ -117,7 +102,7 @@ $$
 
 Therefore $P = P_U$.
 
-_Exercise 9_
+## _Exercise 9_
 
 Suppose $U$ is invariant under $T$.
 Let $v \in V$.
@@ -133,7 +118,7 @@ T_U = T P_U u = P_U T P_U u \in U.
 $$
 Therefore $U$ is invariant under $T$.
 
-_Exercise 10_
+## _Exercise 10_
 
 Suppose $U$ and $U^\perp$ are both invariant under $T$.
 Let $v \in V$.
@@ -174,7 +159,7 @@ $$
 where the last equality follows from Exercise 5.
 Therefore $U^\perp$ is invariant under $T$.
 
-_Exercise 11_
+## _Exercise 11_
 
 Applying the Gram-Schmidt procedure to the basis $(1, 1, 0, 0), (1, 1, 1, 2)$ we get $\frac{1}{\sqrt{2}}(1, 1, 0, 0), \frac{1}{\sqrt{5}}(0, 0, 1, 2)$.
 Using the formula from part (i) in 6.55 to calculate $P_U (1, 2, 3, 4)$, we get
@@ -183,7 +168,7 @@ $$
 P_U (1, 2, 3, 4) = \frac{3}{2}(1, 1, 0, 0) + \frac{11}{5}(0, 0, 1, 2).
 $$
 
-_Exercise 12_
+## _Exercise 12_
 
 Define $U$ by
 

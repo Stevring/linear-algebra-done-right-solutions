@@ -9,7 +9,7 @@ Clearly, $\operatorname{span}(\varphi) \subset (\operatorname{null}\varphi)^0$.
 
 For the inclusion in the other direction, suppose $\psi \notin \operatorname{span}(\varphi)$.
 
-If $\varphi = 0$, then $(\operatorname{null} \varphi)^0 = V^0 = \\{0\\}$ and then, because $\psi \neq 0$, it follows that $\psi \notin \operatorname{span}(\varphi)$.
+If $\varphi = 0$, then $(\operatorname{null} \varphi)^0 = V^0 = 0$ and then, because $\psi \neq 0$, it follows that $\psi \notin \operatorname{span}(\varphi)$.
 
 Assume $\varphi$ is non-zero.
 Let $v_1, \dots, v_n$ be a basis of $\operatorname{null} \varphi$.
@@ -35,8 +35,8 @@ Because $v_j \in \operatorname{null} \varphi$ it follows that $\psi \notin (\ope
 
 By modus tollens, $\psi \in (\operatorname{null} \varphi)^0$ implies $\psi \in \operatorname{span}(\varphi)$.
 Hence $(\operatorname{null} \varphi)^0 \subset \operatorname{span}(\varphi)$ and $\operatorname{span}(\varphi) = (\operatorname{null}\varphi)^0$, as desired.
-<p align="right"> $\blacksquare$ </p>
 
+<p align="right"> $\blacksquare$ </p>
 **Theorem 2.**
 Suppose $V$ is finite-dimensional and $\varphi, \varphi_1, \dots, \varphi_n \in V'$.
 If $(\operatorname{null} \varphi_1) \cap \dots \cap (\operatorname{null} \varphi_n) \subset \operatorname{null} \varphi$, then $\varphi \in \operatorname{span}(\varphi_1, \dots, \varphi_n)$.
